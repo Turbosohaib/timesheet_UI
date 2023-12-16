@@ -53,7 +53,7 @@ const Header = () => {
           <div className="flex items-center mb-4">
             <Link
               href="/signup"
-              className="flex items-center px-8 py-2.5 bg-[#1E5282] hover:bg-[#246098] rounded text-white text-sm"
+              className="flex items-center px-6 py-2.5 bg-[#1E5282] hover:bg-[#246098] rounded text-white text-sm"
             >
               <div>Get Started free</div>
 
