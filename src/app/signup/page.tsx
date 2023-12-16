@@ -104,7 +104,7 @@ const Page = () => {
                           isEmailFocused ? "pt-5" : "pt-2"
                         }`}
                         onFocus={() => setIsEmailFocused(true)}
-                        onBlur={(e) => {
+                        onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
                           if (!e.target.value) {
                             setIsEmailFocused(false);
                           }
@@ -130,7 +130,7 @@ const Page = () => {
                           isNameFocused ? "pt-5" : "pt-2"
                         }`}
                         onFocus={() => setIsNameFocused(true)}
-                        onBlur={(e) => {
+                        onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
                           if (!e.target.value) {
                             setIsNameFocused(false);
                           }
@@ -156,7 +156,7 @@ const Page = () => {
                           isPasswordFocused ? "pt-5" : "pt-2"
                         }`}
                         onFocus={() => setIsPasswordFocused(true)}
-                        onBlur={(e) => {
+                        onBlur={(e: React.FocusEvent<HTMLInputElement>) => {
                           if (!e.target.value) {
                             setIsPasswordFocused(false);
                           }
