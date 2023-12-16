@@ -1,4 +1,10 @@
-export default function Button(props) {
+import React from "react";
+
+interface ButtonProps {
+  text: string;
+}
+
+const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   return (
     <button
       type="submit"
@@ -7,4 +13,6 @@ export default function Button(props) {
       <span className="tracking-[0.3px]">{props.text}</span>
     </button>
   );
-}
+};
+
+export default Button;
